@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALL OR NOTHING | Bunny Host Club</title>
+  <meta name="description" content="Bunny Host Club ALL OR NOTHING - VRChat Event">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <p class="loader-sub">BUNNY HOST CLUB</p>
+      <div class="loader-line"></div>
+      <h1>ALL OR NOTHING</h1>
+      <p class="loader-enter">WELCOME</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a href="#top" class="brand">-AON-</a>
+    <button class="menu-toggle" aria-label="メニュー">MENU</button>
+    <nav class="nav">
+      <a href="#about">ABOUT</a>
+      <a href="#cast">CAST</a>
+      <a href="#system">SYSTEM</a>
+      <a href="#event">EVENT</a>
+      <a href="#group">GROUP</a>
+    </nav>
+  </header>
+
+  <main id="top" class="site-main">
+    <section class="hero" id="entrance">
+      <div class="hero-bg"></div>
+      <div class="hero-light"></div>
+      <div class="gold-dust"></div>
+      <div class="hero-vignette"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">BUNNY HOST CLUB</p>
+        <img src="logo.png" alt="Bunny Host Club All or Nothing" class="hero-logo">
+
+        <a href="#about" class="scroll-cue">SCROLL <span>↓</span></a>
+      </div>
+
+      <div class="door-status" aria-hidden="true">
+        <span></span>
+        <small>WELCOME</small>
+        <span></span>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-heading">
+        <span>01</span>
+        <h2>ABOUT</h2>
+      </div>
+      <div class="about-wide-copy">
+        <p>BunnyHostClub-All or Nothing-</p>
+        <p>断罪バニーボーイOnly</p>
+        <p>-今夜は危険な遊び、してみない？-</p>
+      </div>
+    </section>
+
+    <section id="cast" class="section cast">
+      <div class="section-heading">
+        <span>02</span>
+        <h2>CAST</h2>
+      </div>
+      <div class="cast-grid">
+        <article class="cast-card" role="button" tabindex="0" aria-label="こっとんのプロフィールを開く" onclick="openCastDialog('cottonProfileModal')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCastDialog('cottonProfileModal')}">
+          <div class="cast-photo host-photo"><img src="cotton.png" alt="こっとん"></div>
+          <div class="cast-info"><p class="role">HOST</p><h3>こっとん</h3><p class="profile-trigger">VIEW PROFILE</p></div>
+        </article>
+        <article class="cast-card" role="button" tabindex="0" aria-label="りぶおのプロフィールを開く" onclick="openCastDialog('ribuoProfileModal')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCastDialog('ribuoProfileModal')}">
+          <div class="cast-photo host-photo"><img src="ribu.png" alt="りぶお"></div>
+          <div class="cast-info"><p class="role">HOST</p><h3>りぶお</h3><p class="profile-trigger">VIEW PROFILE</p></div>
+        </article>
+        <article class="cast-card" role="button" tabindex="0" aria-label="りゅうのプロフィールを開く" onclick="openCastDialog('ryuProfileModal')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCastDialog('ryuProfileModal')}">
+          <div class="cast-photo host-photo"><img src="ryu.png" alt="こっとん"></div>
+          <div class="cast-info"><p class="role">HOST</p><h3>りゅう</h3><p class="profile-trigger">VIEW PROFILE</p></div>
+        </article>
+        <article class="cast-card cast-card--extra" role="button" tabindex="0" aria-label="Ciaoのプロフィールを開く" onclick="openCastDialog('ciaoProfileModal')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCastDialog('ciaoProfileModal')}">
+          <div class="cast-photo host-photo"><img src="ciao.png" alt="Ciao"></div>
+          <div class="cast-info"><p class="role">HOST</p><h3>Ciao</h3><p class="profile-trigger">VIEW PROFILE</p></div>
+        </article>
+        <article class="cast-card cast-card--extra" role="button" tabindex="0" aria-label="あちののプロフィールを開く" onclick="openCastDialog('atiProfileModal')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCastDialog('atiProfileModal')}">
+          <div class="cast-photo host-photo"><img src="ati.png" alt="あちの"></div>
+          <div class="cast-info"><p class="role">HOST</p><h3>あちの</h3><p class="profile-trigger">VIEW PROFILE</p></div>
+        </article>
+        <article class="cast-card cast-card--extra" role="button" tabindex="0" aria-label="CAST 06のプロフィールを開く" onclick="openCastDialog('cast06ProfileModal')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCastDialog('cast06ProfileModal')}">
+          <div class="cast-photo placeholder">CAST<br>PHOTO</div>
+          <div class="cast-info"><p class="role">HOST</p><h3>COMING SOON</h3><p class="profile-trigger">VIEW PROFILE</p></div>
+        </article>
+      </div>
+      <div class="cast-more-wrap" aria-controls="castExtra" aria-expanded="false">
+        <a class="cast-more-link" id="castMoreButton" href="#cast" role="button"
+        aria-expanded="false" aria-controls="castExtra"
+        onclick="toggleCastMore(event)">
+          <span class="cast-more-label">VIEW MORE</span>
+          <span class="cast-more-line"></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="system" class="section system">
+      <div class="section-heading">
+        <span>03</span>
+        <h2>SYSTEM</h2>
+      </div>
+      <div class="system-grid">
+        <div class="system-item"><span>01</span><h3>OPEN</h3><p>隔週火曜日、22時より開催いたします。</p></div>
+        <div class="system-item"><span>02</span><h3>SERVICE</h3><p>1ローテxx分間、xローテーションとなります。</p></div>
+        <div class="system-item"><span>03</span><h3>AFTER</h3><p>23時から、Group+インスタンスにてアフターを行います。</p></div>
+      </div>
+    </section>
+
+    <section id="event" class="section event">
+      <div class="section-heading">
+        <span>04</span>
+        <h2>INFO</h2>
+      </div>
+      <div class="event-news-wrap">
+        <a class="event-x-card" href="https://x.com/VRC_AON" target="_blank" rel="noopener noreferrer" aria-label="OFFICIAL X @VRC_AONを開く">
+          <div>
+            <p class="role">OFFICIAL X</p>
+            <h3>@VRC_AON</h3>
+            <p>イベントの最新情報・告知はこちらからご覧いただけます。</p>
+          </div>
+          <span class="event-x-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="group" class="section group">
+      <div class="section-heading">
+        <span>05</span>
+        <h2>GROUP</h2>
+      </div>
+      <div class="event-news-wrap">
+        <a class="event-x-card" href="https://vrchat.com/home/group/grp_cd4a1a2f-d4a1-4ba4-b835-c5b95eab1c69" target="_blank" rel="noopener noreferrer" aria-label="ALL OR NOTHING VRChat Groupを開く">
+          <div>
+            <p class="role">VRCHAT GROUP</p>
+            <h3>ALL OR NOTHING</h3>
+            <p>イベントの最新情報や参加案内はこちらから。</p>
+          </div>
+          <span class="event-x-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="footer-logo">ALL OR NOTHING</div>
+    <p>BUNNY HOST CLUB</p>
+    <div class="footer-links">
+      <a href="https://x.com/VRC_AON" target="_blank" rel="noopener noreferrer">X / TWITTER</a>
+      <a href="#group">VRCHAT GROUP</a>
+    </div>
+    <small>© ALL OR NOTHING</small>
+  </footer>
+
+  <div class="host-profile-modal" id="cottonProfileModal" aria-hidden="true">
+    <div class="host-profile-backdrop" onclick="closeCastDialog('cottonProfileModal')"></div>
+    <div class="host-profile-dialog" role="dialog" aria-modal="true" aria-labelledby="kottonProfileName">
+      <button class="host-profile-close" type="button" aria-label="プロフィールを閉じる" onclick="closeCastDialog('cottonProfileModal')">×</button>
+      <div class="host-profile-media"><img src="cotton.png" alt="こっとん"></div>
+      <div class="host-profile-info">
+        <span class="host-profile-label">HOST PROFILE</span>
+        <h3 id="kottonProfileName">こっとん</h3>
+        <span class="host-profile-rule"></span>
+        <p class="host-profile-copy">ああああああああああああああああああああああああああああ</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="host-profile-modal" id="ribuoProfileModal" aria-hidden="true">
+    <div class="host-profile-backdrop" onclick="closeCastDialog('ribuoProfileModal')"></div>
+    <div class="host-profile-dialog" role="dialog" aria-modal="true" aria-labelledby="ribuoProfileName">
+      <button class="host-profile-close" type="button" aria-label="プロフィールを閉じる" onclick="closeCastDialog('cottonProfileModal')">×</button>
+      <div class="host-profile-media"><img src="ribu.png" alt="りぶお"></div>
+      <div class="host-profile-info">
+        <span class="host-profile-label">HOST PROFILE</span>
+        <h3 id="kottonProfileName">りぶお</h3>
+        <span class="host-profile-rule"></span>
+        <p class="host-profile-copy">いいいいいいいいいいいいいいいいいいいいいいいいいいい</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="host-profile-modal" id="ryuProfileModal" aria-hidden="true">
+    <div class="host-profile-backdrop" onclick="closeCastDialog('ryuProfileModal')"></div>
+    <div class="host-profile-dialog" role="dialog" aria-modal="true" aria-labelledby="ryuProfileName">
+      <button class="host-profile-close" type="button" aria-label="プロフィールを閉じる" onclick="closeCastDialog('ryuProfileModal')">×</button>
+      <div class="host-profile-media"><img src="ryu.png" alt="りゅう"></div>
+      <div class="host-profile-info">
+        <span class="host-profile-label">HOST PROFILE</span>
+        <h3 id="ryuProfileName">りゅう</h3>
+        <span class="host-profile-rule"></span>
+        <p class="host-profile-copy">ううううううううううううううううううううううううううううううう</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="host-profile-modal" id="ciaoProfileModal" aria-hidden="true">
+    <div class="host-profile-backdrop" onclick="closeCastDialog('ciaoProfileModal')"></div>
+    <div class="host-profile-dialog" role="dialog" aria-modal="true" aria-labelledby="ciaoProfileName">
+      <button class="host-profile-close" type="button" aria-label="プロフィールを閉じる" onclick="closeCastDialog('ciaoProfileModal')">×</button>
+      <div class="host-profile-media"><img src="ciao.png" alt="Ciao"></div>
+      <div class="host-profile-info">
+        <span class="host-profile-label">HOST PROFILE</span>
+        <h3 id="ciaoProfileName">Ciao</h3>
+        <span class="host-profile-rule"></span>
+        <p class="host-profile-copy">ええええええええええええええええええええええええええええ</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="host-profile-modal" id="atiProfileModal" aria-hidden="true">
+    <div class="host-profile-backdrop" onclick="closeCastDialog('atiProfileModal')"></div>
+    <div class="host-profile-dialog" role="dialog" aria-modal="true" aria-labelledby="atiProfileName">
+      <button class="host-profile-close" type="button" aria-label="プロフィールを閉じる" onclick="closeCastDialog('atiProfileModal')">×</button>
+      <div class="host-profile-media"><img src="ati.png" alt="あちの"></div>
+      <div class="host-profile-info">
+        <span class="host-profile-label">HOST PROFILE</span>
+        <h3 id="atiProfileName">あちの</h3>
+        <span class="host-profile-rule"></span>
+        <p class="host-profile-copy">おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="host-profile-modal" id="cast06ProfileModal" aria-hidden="true">
+    <div class="host-profile-backdrop" onclick="closeCastDialog('cast06ProfileModal')"></div>
+    <div class="host-profile-dialog" role="dialog" aria-modal="true" aria-labelledby="cast06ProfileName">
+      <button class="host-profile-close" type="button" aria-label="プロフィールを閉じる" onclick="closeCastDialog('cast06ProfileModal')">×</button>
+      <div class="host-profile-media"><div class="cast-photo placeholder">CAST<br>PHOTO</div></div>
+      <div class="host-profile-info"><span class="host-profile-label">HOST PROFILE</span><h3 id="cast06ProfileName">COMING SOON</h3><span class="host-profile-rule"></span><p class="host-profile-copy">Profile coming soon.</p></div>
+    </div>
+  </div>
+
+  <script>
+    const body = document.body;
+
+    window.addEventListener('load', () => {
+      setTimeout(() => body.classList.add('preloaded'), 250);
+      setTimeout(() => document.getElementById('loader').classList.add('hide'), 1450);
+      setTimeout(() => body.classList.add('entered'), 2300);
+    });
+
+
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+    document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, {threshold: 0.12});
+
+    document.querySelectorAll('.section, .cast-card, .event-feature, .system-item').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+
+    // Tiny ambient particles for the lobby atmosphere.
+    const dust = document.querySelector('.gold-dust');
+    for (let i = 0; i < 34; i++) {
+      const p = document.createElement('span');
+      p.style.left = Math.random() * 100 + '%';
+      p.style.top = (45 + Math.random() * 55) + '%';
+      p.style.animationDelay = (Math.random() * 7) + 's';
+      p.style.animationDuration = (5 + Math.random() * 7) + 's';
+      dust.appendChild(p);
+    }
+  </script>
+  <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+
+
+<script>
+
+function toggleCastMore(event) {
+  if (event) event.preventDefault();
+  var grid = document.querySelector('.cast-grid');
+  var wrap = document.querySelector('.cast-more-wrap');
+  var link = document.getElementById('castMoreButton');
+  if (!grid || !wrap || !link) return;
+
+  var expanded = grid.classList.toggle('is-expanded');
+  wrap.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  link.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+
+  var label = link.querySelector('.cast-more-label');
+  if (label) label.textContent = expanded ? 'SHOW LESS' : 'VIEW MORE';
+}
+
+function openCastDialog(id) {
+  var modal = document.getElementById(id);
+  if (!modal) return;
+  modal.classList.add('is-open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('profile-modal-open');
+}
+function closeCastDialog(id) {
+  var modal = document.getElementById(id);
+  if (!modal) return;
+  modal.classList.remove('is-open');
+  modal.setAttribute('aria-hidden', 'true');
+  var anyOpen = document.querySelector('.host-profile-modal.is-open');
+  if (!anyOpen) document.body.classList.remove('profile-modal-open');
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key !== 'Escape') return;
+  var openModal = document.querySelector('.host-profile-modal.is-open');
+  if (openModal) closeCastDialog(openModal.id);
+});
+</script>
+</body>
+</html>
