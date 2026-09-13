@@ -92,9 +92,17 @@
           <div class="cast-photo host-photo"><img src="ati.png" alt="あちの"></div>
           <div class="cast-info"><p class="role">HOST</p><h3>あちの</h3><p class="profile-trigger">VIEW PROFILE</p></div>
         </article>
+        <article class="cast-card cast-card--extra" role="button" tabindex="0" aria-label="のありすのプロフィールを開く" onclick="openCastDialog('noaProfileModal')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCastDialog('noaProfileModal')}">
+          <div class="cast-photo host-photo"><img src="noa.png" alt="のありす"></div>
+          <div class="cast-info"><p class="role">HOST</p><h3>のありす</h3><p class="profile-trigger">VIEW PROFILE</p></div>
+        </article>
         <article class="cast-card cast-card--extra">
-          <div class="cast-photo host-photo"><img src="staff.png" alt="あめ"></div>
-          <div class="cast-info"><p class="role">STAFF</p><h3>あめ</h3></div>
+          <div class="cast-photo host-photo"><img src="ame.png" alt="雨夜"></div>
+          <div class="cast-info"><p class="role">STAFF</p><h3>雨夜</h3></div>
+        </article>
+        <article class="cast-card cast-card--extra">
+          <div class="cast-photo host-photo"><img src="auru.png" alt="あうる"></div>
+          <div class="cast-info"><p class="role">STAFF</p><h3>あうる</h3></div>
         </article>
         <article class="cast-card cast-card--extra" role="button" tabindex="0" aria-label="CAST 06のプロフィールを開く" onclick="openCastDialog('cast06ProfileModal')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCastDialog('cast06ProfileModal')}">
           <div class="cast-photo placeholder">CAST<br>PHOTO</div>
@@ -237,6 +245,20 @@
         <h3 id="atiProfileName">あちの</h3>
         <span class="host-profile-rule"></span>
         <p class="host-profile-copy">おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</p>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="host-profile-modal" id="noaProfileModal" aria-hidden="true">
+    <div class="host-profile-backdrop" onclick="closeCastDialog('noaProfileModal')"></div>
+    <div class="host-profile-dialog" role="dialog" aria-modal="true" aria-labelledby="noaProfileName">
+      <button class="host-profile-close" type="button" aria-label="プロフィールを閉じる" onclick="closeCastDialog('noaProfileModal')">×</button>
+      <div class="host-profile-media"><img src="noa.png" alt="のありす"></div>
+      <div class="host-profile-info">
+        <span class="host-profile-label">HOST PROFILE</span>
+        <h3 id="のありすProfileName">のありす</h3>
+        <span class="host-profile-rule"></span>
+        <p class="host-profile-copy">のありすけるたあ～</p>
       </div>
     </div>
   </div>
