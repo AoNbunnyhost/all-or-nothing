@@ -422,3 +422,11 @@
 @media (max-width: 760px) {
   .cast-more-wrap { margin-top: 36px; }
 }
+.cast-x {
+  color: #b18a45;
+  text-decoration: none;
+}
+
+.cast-x:hover {
+  opacity: .7;
+}
