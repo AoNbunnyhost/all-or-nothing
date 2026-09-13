@@ -423,10 +423,15 @@
   .cast-more-wrap { margin-top: 36px; }
 }
 .cast-x {
-  color: #b18a45;
-  text-decoration: none;
+  color: #b18a45 !important;
+  text-decoration: none !important;
+}
+
+.cast-x:visited {
+  color: #b18a45 !important;
 }
 
 .cast-x:hover {
+  color: #b18a45 !important;
   opacity: .7;
 }
