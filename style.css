@@ -425,6 +425,8 @@
 .cast-x {
   color: #b18a45 !important;
   text-decoration: none !important;
+  margin-top: 1em;
+  display: inline-block;
 }
 
 .cast-x:visited {
