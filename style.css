@@ -438,8 +438,8 @@
   opacity: .7;
 }
 .cast-reading {
-  font-size: 0.45em;
-  font-weight: normal;
+  font-size: 12px !important;
+  font-weight: normal !important;
   letter-spacing: 0.08em;
   opacity: 0.75;
 }
