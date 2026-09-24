@@ -48,6 +48,14 @@
 }
 @media(prefers-reduced-motion:reduce){
   *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+
+  /* SHOW MOREの追加CASTは、アニメーション無効環境でも表示する */
+  .cast-grid.is-expanded .cast-card--extra{
+    display:block!important;
+    visibility:visible!important;
+    opacity:1!important;
+    transform:none!important;
+  }
 }
 
 
