@@ -104,9 +104,9 @@
           <div class="cast-photo host-photo"><img src="siki.png" alt="四季"></div>
           <div class="cast-info"><p class="role">HOST</p><h3>四季  <span class="cast-reading">-Shiki-</span></h3><p class="profile-trigger">VIEW PROFILE</p></div>
         </article>
-        <article class="cast-card cast-card--extra" role="button" tabindex="0" aria-label="出雲のプロフィールを開く" onclick="openCastDialog('izumoProfileModal')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCastDialog('izumoProfileModal')}">
-          <div class="cast-photo host-photo"><img src="sora.png" alt="出雲"></div>
-          <div class="cast-info"><p class="role">HOST</p><h3>出雲  <span class="cast-reading">-Izumo-</span></h3><p class="profile-trigger">VIEW PROFILE</p></div>
+        <article class="cast-card cast-card--extra" role="button" tabindex="0" aria-label="八雲のプロフィールを開く" onclick="openCastDialog('yakumoProfileModal')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCastDialog('yakumoProfileModal')}">
+          <div class="cast-photo host-photo"><img src="sora.png" alt="八雲"></div>
+          <div class="cast-info"><p class="role">HOST</p><h3>八雲  <span class="cast-reading">-Yakumo-</span></h3><p class="profile-trigger">VIEW PROFILE</p></div>
         </article>
         <article class="cast-card cast-card--extra">
           <div class="cast-photo host-photo"><img src="ame.png" alt="雨夜"></div>
@@ -322,16 +322,16 @@
     </div>
   </div>
   
-  <div class="host-profile-modal" id="izumoProfileModal" aria-hidden="true">
-    <div class="host-profile-backdrop" onclick="closeCastDialog('izumoProfileModal')"></div>
-    <div class="host-profile-dialog" role="dialog" aria-modal="true" aria-labelledby="izumoProfileName">
-      <button class="host-profile-close" type="button" aria-label="プロフィールを閉じる" onclick="closeCastDialog('izumoProfileModal')">×</button>
-      <div class="host-profile-media"><img src="sora.png" alt="出雲"></div>
+  <div class="host-profile-modal" id="yakumoProfileModal" aria-hidden="true">
+    <div class="host-profile-backdrop" onclick="closeCastDialog('yakumoProfileModal')"></div>
+    <div class="host-profile-dialog" role="dialog" aria-modal="true" aria-labelledby="yakumoProfileName">
+      <button class="host-profile-close" type="button" aria-label="プロフィールを閉じる" onclick="closeCastDialog('yakumoProfileModal')">×</button>
+      <div class="host-profile-media"><img src="sora.png" alt="八雲"></div>
       <div class="host-profile-info">
         <span class="host-profile-label">HOST PROFILE</span>
-        <h3 id="izumoProfileName">出雲  <span class="cast-reading">-Izumo-</span></h3>
+        <h3 id="yakumoProfileName">八雲  <span class="cast-reading">-Yakumo-</span></h3>
         <span class="host-profile-rule"></span>
-        <p class="host-profile-copy">こえがいい</p>
+        <p class="host-profile-copy">勝てる勝負しかしないだけじゃ、面白くないでしょ。</p>
         <a href="https://x.com/Solakoegaii_vrc" target="_blank" rel="noopener" class="cast-x"> X / PROFILE </a>
       </div>
     </div>
