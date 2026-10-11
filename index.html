@@ -108,6 +108,10 @@
           <div class="cast-photo host-photo"><img src="sora.png" alt="八雲"></div>
           <div class="cast-info"><p class="role">HOST</p><h3>八雲  <span class="cast-reading">-Yakumo-</span></h3><p class="profile-trigger">VIEW PROFILE</p></div>
         </article>
+        <article class="cast-card cast-card--extra" role="button" tabindex="0" aria-label="夜依のプロフィールを開く" onclick="openCastDialog('yaiProfileModal')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCastDialog('yaiProfileModal')}">
+          <div class="cast-photo host-photo"><img src="yai.png" alt="夜依"></div>
+          <div class="cast-info"><p class="role">HOST</p><h3>夜依  <span class="cast-reading">-Yai-</span></h3><p class="profile-trigger">VIEW PROFILE</p></div>
+        </article>
         <article class="cast-card cast-card--extra">
           <div class="cast-photo host-photo"><img src="ame.png" alt="雨夜"></div>
           <div class="cast-info"><p class="role">STAFF</p><h3>雨夜  <span class="cast-reading">-Amaya-</span></h3></div>
@@ -337,6 +341,21 @@
     </div>
   </div>
 
+  <div class="host-profile-modal" id="yaiProfileModal" aria-hidden="true">
+    <div class="host-profile-backdrop" onclick="closeCastDialog('yaiProfileModal')"></div>
+    <div class="host-profile-dialog" role="dialog" aria-modal="true" aria-labelledby="yaiProfileName">
+      <button class="host-profile-close" type="button" aria-label="プロフィールを閉じる" onclick="closeCastDialog('yaiProfileModal')">×</button>
+      <div class="host-profile-media"><img src="yai.png" alt="夜依"></div>
+      <div class="host-profile-info">
+        <span class="host-profile-label">HOST PROFILE</span>
+        <h3 id="yakumoProfileName">夜依  <span class="cast-reading">-Yai-</span></h3>
+        <span class="host-profile-rule"></span>
+        <p class="host-profile-copy">やいやいやいやいやい</p>
+        <a href="https://x.com/yaiyai_vrc" target="_blank" rel="noopener" class="cast-x"> X / PROFILE </a>
+      </div>
+    </div>
+  </div>
+  
   <div class="host-profile-modal" id="cast06ProfileModal" aria-hidden="true">
     <div class="host-profile-backdrop" onclick="closeCastDialog('cast06ProfileModal')"></div>
     <div class="host-profile-dialog" role="dialog" aria-modal="true" aria-labelledby="cast06ProfileName">
