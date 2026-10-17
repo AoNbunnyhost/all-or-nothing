@@ -561,3 +561,14 @@
     object-fit: contain !important;
   }
 }
+
+
+/* FINAL TUNE — ダイアログ画像とプロフィール情報の間隔を少し広げる */
+.host-profile-dialog {
+  gap: 32px !important;
+}
+@media (max-width: 700px) {
+  .host-profile-dialog {
+    gap: 22px !important;
+  }
+}
