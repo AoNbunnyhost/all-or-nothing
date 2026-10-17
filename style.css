@@ -572,3 +572,19 @@
     gap: 22px !important;
   }
 }
+
+
+/* FORCE OVERRIDE — dialog image/profile horizontal spacing */
+.host-profile-modal .host-profile-dialog {
+  column-gap: 48px !important;
+  gap: 48px !important;
+  grid-template-columns: 240px minmax(0, 1fr) !important;
+}
+@media (max-width: 700px) {
+  .host-profile-modal .host-profile-dialog {
+    column-gap: 22px !important;
+    row-gap: 22px !important;
+    gap: 22px !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
