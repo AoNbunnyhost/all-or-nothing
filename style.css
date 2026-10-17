@@ -526,3 +526,38 @@
     margin: 0 auto !important;
   }
 }
+
+
+/* FINAL FIX — ダイアログ画像の下部を切らず、画像全体を表示 */
+.host-profile-media {
+  width: 240px !important;
+  height: auto !important;
+  max-height: 65vh;
+  display: flex !important;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: visible !important;
+  box-sizing: border-box;
+}
+.host-profile-media img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: 65vh;
+  object-fit: contain !important;
+  object-position: center top !important;
+}
+@media (max-width: 700px) {
+  .host-profile-media {
+    width: min(260px, 100%) !important;
+    height: auto !important;
+    max-height: 48vh;
+    margin: 0 auto !important;
+  }
+  .host-profile-media img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 48vh;
+    object-fit: contain !important;
+  }
+}
